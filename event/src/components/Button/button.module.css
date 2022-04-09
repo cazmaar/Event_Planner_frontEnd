@@ -1,0 +1,11 @@
+/* .homeBackground{
+ background-color: red;
+} */
+
+.button {
+  width: 85%;
+  margin-left: 7.5%;
+  border-radius: 1rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
