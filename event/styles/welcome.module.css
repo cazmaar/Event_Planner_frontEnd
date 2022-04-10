@@ -7,7 +7,29 @@
   background-position: center;
   background-size: cover;
 }
-.signup{
-background-color: red;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24rem;
+}
+.slogan {
+  color: var(--textColor);
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Philosopher", sans-serif;
+}
 
+.logo {
+  text-align: center;
+  color: var(--textColor);
+  padding-top: 2rem;
+  font-size:3rem;
+  font-family: "Philosopher", sans-serif;
+}
+.textDesign {
+  font-size: 2.2rem;
 }

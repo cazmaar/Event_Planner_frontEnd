@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ name, color }) => {
   // button component takes ina props of name
   return (
 
-      <button style={{ backgroundColor: "blue" }} className={css.button}>
+      <button style={{ backgroundColor: color }} className={css.button}>
         {name}
       </button>
 
