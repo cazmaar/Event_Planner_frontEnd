@@ -4,9 +4,10 @@
 
 .button {
   width: 20rem;
-
-  border-radius: 1rem;
+color: white;
+  border-radius: 0.6rem;
   height: 3rem;
   margin-top: 1rem;
-  border: none
+  border: none;
+  /* opacity:0.4 */
 }
