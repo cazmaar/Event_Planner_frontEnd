@@ -3,8 +3,9 @@ import css from "./login.module.css";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
-import { getAuth } from "firebase/auth";
+import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 import Button from "../../src/components/Button";
+import auth from "../../utils/firebase"
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -15,6 +16,7 @@ const LoginForm: React.FC = () => {
 
 
 
+  // const auth = getAuth(app)
   const [passwordState, setPasswordState] = useState<boolean>(true);
   const { register, handleSubmit } = useForm<Inputs>();
   // function run when eye is clicked
@@ -25,6 +27,8 @@ const LoginForm: React.FC = () => {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const { email, password } = data;
+    const user = await signInWithEmailAndPassword(auth,email,password)
+    console.log(user)
   };
 
   return (

@@ -7,9 +7,12 @@ import css from "../styles/welcome.module.css";
 import Button from "../src/components/Button";
 
 const Home: React.FC = () => {
-  const router = useRouter()
-  const handleLogin = ()=>{
-router.push("/Login")
+  const router = useRouter();
+  const handleLogin = () => {
+    router.push("/Login");
+  };
+  const handleSignUp = ()=>{
+    router.push("/Register")
   }
   return (
     <main className={css.homeBackground}>
@@ -22,10 +25,19 @@ router.push("/Login")
         </p>
       </div>
       <div className={css.buttons}>
-        <Button name="SIGN UP" color={"#09E85E"}  handleRouter={handleLogin}/>
-    
-          <Button name="LOGIN" color={"#6D5A72"} handleRouter={handleLogin} />
-        
+        <Button
+          name="SIGN UP"
+          color={"#09E85E"}
+          handleRouter={handleSignUp}
+          opacity={1}
+        />
+
+        <Button
+          name="LOGIN"
+          color={"#6D5A72"}
+          handleRouter={handleLogin}
+          opacity={1}
+        />
       </div>
     </main>
   );

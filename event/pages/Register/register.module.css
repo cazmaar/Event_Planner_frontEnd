@@ -1,0 +1,70 @@
+.logo {
+  text-align: center;
+  color: var(--primaryColor);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-family: "Philosopher", sans-serif;
+}
+.textDesign {
+  font-size: 2.2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.inputEmail {
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  border: 1.3px solid rgb(180, 179, 179);
+}
+.password {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.inputPassword {
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.6rem;
+  border: 1.3px solid rgb(180, 179, 179);
+}
+.eye {
+  position: relative;
+  right: 2.5rem;
+}
+.submit {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  border: none;
+  color: white;
+  background-color: #09e85e;
+  opacity: 0.6;
+}
+
+.reset {
+  color: #09e85e;
+  margin-top: 1rem;
+}
+.newUser {
+  margin-top: 1rem;
+}
+.login {
+  color: #09e85e;
+  padding-left: 0.2rem;
+  text-decoration: underline;
+}
+
+.login:hover{
+ font-weight: bold;
+}
